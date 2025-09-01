@@ -58,18 +58,20 @@
 
             // , <&key_physical_attrs 100 100    0  300       0     0     0>   // SHIFT/(
             // , <&key_physical_attrs 100 100  100  300       0     0     0>   // ESC
-            , <&key_physical_attrs 100 100    0  300       0     0     0>   // CTRL
-            , <&key_physical_attrs 100 100  100  300       0     0     0>   // SYM
-            , <&key_physical_attrs 100 100  200  300       0     0     0>   // GUI
-            , <&key_physical_attrs 100 100  300  300       0     0     0>   // Ctl/ESC
-            , <&key_physical_attrs 100 100  400  300       0     0     0>   // Nav/SPC
-            , <&key_physical_attrs 100 100  500  300       0     0     0>   // Nav/SPC
-            , <&key_physical_attrs 100 100  600  300       0     0     0>   // Ctl/ESC
-            , <&key_physical_attrs 100 100  700  300       0     0     0>   // Sym/SPC
-            , <&key_physical_attrs 100 100  800  300       0     0     0>   // SYM
-            , <&key_physical_attrs 100 100  900  300       0     0     0>   // backslash
-            , <&key_physical_attrs 100 100 1000  300       0     0     0>   // [
-            , <&key_physical_attrs 100 100 1100  300       0     0     0>   // ]
+            , <&key_physical_attrs 100 100    0  300       0     0     0>   // Shift
+            , <&key_physical_attrs 100 100  100  300       0     0     0>   // esc
+            , <&key_physical_attrs 100 100  200  300       0     0     0>   // backslash
+            , <&key_physical_attrs 100 100  300  300       0     0     0>   // sym
+            , <&key_physical_attrs 100 100  400  300       0     0     0>   // LGUI
+            , <&key_physical_attrs 100 100  500  300       0     0     0>   // CTRL
+            , <&key_physical_attrs 100 100  600  300       0     0     0>   // Nav/SPC
+            , <&key_physical_attrs 100 100  700  300       0     0     0>   // Nav/SPC
+            , <&key_physical_attrs 100 100  800  300       0     0     0>   // CTRL
+            , <&key_physical_attrs 100 100  900  300       0     0     0>   // GUI
+            , <&key_physical_attrs 100 100 1000  300       0     0     0>   // Sym/-
+            , <&key_physical_attrs 100 100 1100  300       0     0     0>   // =
+            , <&key_physical_attrs 100 100 1200  300       0     0     0>   // [
+            , <&key_physical_attrs 100 100 1300  300       0     0     0>   // ]
             ;
     };
 };

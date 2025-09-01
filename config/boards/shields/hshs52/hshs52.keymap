@@ -40,10 +40,10 @@
  * | Mis_Ctl |  ESC  | CTRL  |-------|  Sym  |  GUI  |  Ctrl | Nav/SPC |---| Nav/SPC |  Ctrl | Sym/SPc | BKSPC |-------|   \   |   [   |    ]    |
  */
                         bindings = <
-&kp  GRAVE        &kp  Q        &kp  W        &kp  E        &kp  R        &kp  T                          /**/                   &kp  Y          &kp  U        &kp  I        &kp  O          &kp  P        &kp  BSPC
-&kp  TAB          &kp  A        &kp  S        &kp  D        &kp  F        &kp  G                          /**/                   &kp  H          &kp  J        &kp  K        &kp  L          &kp  SEMI     &kp  SQT
-&mt  LSHFT LPAR   &kp  Z        &kp  X        &kp  C        &kp  V        &kp  B        RALT_RET          /**/          RALT_RET &kp  N          &kp  M        &kp  COMMA    &kp  DOT        &kp  FSLH     &mt LSHFT RPAR
-&kp  C_MUTE       &kp  ESC      &kp  LCTRL                  &mo  SYM_L    &kp  LGUI     LCTR_ESC NAV_SPC  /**/ NAV_SPC  NAV_SPC  &kp RGUI &kp  BSPC                   &kp  BACKSLASH  &kp  DOWN     &kp  RBKT
+&kp  GRAVE        &kp  Q        &kp  W        &kp  E        &kp  R        &kp  T                          /**/                   &kp  Y     &kp  U        &kp  I        &kp  O          &kp  P        &kp  BSPC
+&kp  TAB          &kp  A        &kp  S        &kp  D        &kp  F        &kp  G                          /**/                   &kp  H     &kp  J        &kp  K        &kp  L          &kp  SEMI     &kp  SQT
+&mt  LSHFT LPAR   &kp  Z        &kp  X        &kp  C        &kp  V        &kp  B        RALT_RET          /**/          RALT_RET &kp  N     &kp  M        &kp  COMMA    &kp  DOT        &kp  FSLH     &mt RSHFT RET
+&kp  C_MUTE       &kp  ESC      &kp  LCTRL                  &mo  SYM_L    &kp  LGUI     LCTR_ESC NAV_SPC  /**/ NAV_SPC  NAV_SPC  &kp RGUI   &mo  SYM_L                   &kp  BACKSLASH &kp  LBKT     &kp RBKT
                         >;
 
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;

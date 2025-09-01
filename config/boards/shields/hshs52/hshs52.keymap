@@ -23,6 +23,8 @@
 #define Paste  LC(V)
 #define Redo   LC(Y)
 #define LCTR_ESC  &mt LCTRL ESC
+#define NAV_SPC  &lt NAV_L SPACE
+#define RALT_RET &mt RALT RET
 
 
 / {
@@ -32,16 +34,16 @@
                 default_layer {
 /* QWERTY
  * -------------------------------------------------------------------------------------------------------------------------------------------
- * | `       |   Q   |   W   |   E   |   R   |   T   |-----------------------------------|    Y    |   U   |   I   |   O   |   P   |    [    |
+ * | `       |   Q   |   W   |   E   |   R   |   T   |-----------------------------------|    Y    |   U   |   I   |   O   |   P   |   DEL   |
  * | TAB     |   A   |   S   |   D   |   F   |   G   |-----------------------------------|    H    |   J   |   K   |   L   |   ;   |    '    |
  * | SHIFT/( |   Z   |   X   |   C   |   V   |   B   |  Alt  |-------------------|  Alt  |    N    |   M   |   ,   |   .   |   /   | SHIFT/) |
  * | Mis_Ctl |  ESC  | CTRL  |-------|  Sym  |  GUI  |  Nav  |  Ctrl |---|  Ctrl |  Nav  | Sym/SPc | BKSPC |-------|   \   | Down  |    ]    |
  */
                         bindings = <
-&kp  GRAVE        &kp  Q        &kp  W        &kp  E        &kp  R        &kp  T                                                          &kp  Y          &kp  U        &kp  I        &kp  O          &kp  P        &kp  LBKT
-&kp  TAB          &kp  A        &kp  S        &kp  D        &kp  F        &kp  G                                                          &kp  H          &kp  J        &kp  K        &kp  L          &kp  SEMI     &kp  SQT
-&mt  LSHFT LPAR   &kp  Z        &kp  X        &kp  C        &kp  V        &kp  B        &mt RALT RET                         &mt RALT RET &kp  N          &kp  M        &kp  COMMA    &kp  DOT        &kp  FSLH     &mt LSHFT RPAR
-&kp  C_MUTE       &kp  ESC      &kp  LCTRL                  &mo  SYM_L    &kp  LGUI     &mo NAV_L     LCTR_ESC     LCTR_ESC  &mo NAV_L    &lt SYM_L SPACE &kp  BSPC                   &kp  BACKSLASH  &kp  DOWN     &kp  RBKT
+&kp  GRAVE        &kp  Q        &kp  W        &kp  E        &kp  R        &kp  T                                                       &kp  Y      &kp  U        &kp  I        &kp  O          &kp  P        &kp  BSPC
+&kp  TAB          &kp  A        &kp  S        &kp  D        &kp  F        &kp  G                                                       &kp  H      &kp  J        &kp  K        &kp  L          &kp  SEMI     &kp  SQT
+&mt  LSHFT LPAR   &kp  Z        &kp  X        &kp  C        &kp  V        &kp  B        RALT_RET                          RALT_RET     &kp  N      &kp  M        &kp  COMMA    &kp  DOT        &kp  FSLH     &mt  LSHFT RPAR
+&kp  C_MUTE       &kp  ESC      &kp  LCTRL                  &mo  SYM_L    &kp  LGUI     LCTR_ESC     NAV_SPC     NAV_SPC  LCTR_ESC     RGUI        &mo  SYM_L                  &kp  BACKSLASH  &kp  LBKT     &kp  RBKT
                         >;
 
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;

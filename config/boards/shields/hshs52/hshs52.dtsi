@@ -5,11 +5,13 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
+#include "hshs52-layouts.dtsi"
 
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,matrix_transform = &default_transform;
+        zmk,physical-layout = &hshs52_layout;
+        // zmk,matrix_transform = &default_transform;
     };
 
     default_transform: keymap_transform_0 {

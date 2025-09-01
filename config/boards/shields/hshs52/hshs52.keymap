@@ -26,6 +26,7 @@
 #define NAV_SPC  &lt NAV_L SPACE
 #define RALT_RET &mt RALT RET
 #define LSHFT_LPAR &mt LSHFT LPAR
+#define SYM_MINUS    &lt SYM_L MINUS
 
 
 / {
@@ -37,13 +38,13 @@
  * | `       |   Q   |   W   |   E   |   R   |   T   |---------------------------------------|   Y   |   U   |   I   |   O   |   P   |  DEL   |
  * | TAB     |   A   |   S   |   D   |   F   |   G   |---------------------------------------|   H   |   J   |   K   |   L   |   ;   |   '    |
  * | SHIFT/( |   Z   |   X   |   C   |   V   |   B   |  Alt  |-----------------------|  Alt  |    N    |   M   |   ,   |   .   |  /  |SHFT/ret|
- * | Mis_Ctl |  ESC  | CTRL  |-------|  Sym  |  GUI  |Ctl/esc| Nav/SPC |---| Nav/SPC |Ctl/esc| Sym/SPc |  SYM  |-------|   \   |  [  |    ]   |
+ * | SHIFT/( |  ESC  | CTRL  |-------|  Sym  |  GUI  |Ctl/esc| Nav/SPC |---| Nav/SPC |Ctl/esc| Sym/SPc |  SYM  |-------|   \   |  [  |    ]   |
  */
                         bindings = <
-&kp  GRAVE   &kp  Q        &kp  W        &kp  E    &kp  R      &kp  T                         /**/                   &kp  Y     &kp  U        &kp  I        &kp  O          &kp  P        &kp  BSPC
-&kp  TAB     &kp  A        &kp  S        &kp  D    &kp  F      &kp  G                         /**/                   &kp  H     &kp  J        &kp  K        &kp  L          &kp  SEMI     &kp  SQT
-LSHFT_LPAR   &kp  Z        &kp  X        &kp  C    &kp  V      &kp  B      RALT_RET           /**/          RALT_RET &kp  N     &kp  M        &kp  COMMA    &kp  DOT        &kp  FSLH     &mt RSHFT RET
-LSHFT_LPAR   &kp  ESC      &kp  LCTRL              &mo  SYM_L  &kp  LGUI   LCTR_ESC  NAV_SPC  /**/ NAV_SPC  LCTR_ESC  &kp RGUI   &mo  SYM_L                   &kp  BACKSLASH &kp  LBKT     &kp RBKT
+&kp  GRAVE   &kp  Q        &kp  W        &kp  E    &kp  R      &kp  T                         /**/                   &kp  Y     &kp  U        &kp  I        &kp  O       &kp  P        &kp  BSPC
+&kp  TAB     &kp  A        &kp  S        &kp  D    &kp  F      &kp  G                         /**/                   &kp  H     &kp  J        &kp  K        &kp  L       &kp  SEMI     &kp  SQT
+LSHFT_LPAR   &kp  Z        &kp  X        &kp  C    &kp  V      &kp  B      RALT_RET           /**/          RALT_RET &kp  N     &kp  M        &kp  COMMA    &kp  DOT     &kp  FSLH     &mt RSHFT RET
+LSHFT_LPAR   &kp  ESC      &kp  BACKSLASH          &mo  SYM_L  &kp  LGUI   LCTR_ESC  NAV_SPC  /**/ NAV_SPC  LCTR_ESC  &kp RGUI  SYM_MINUS                   &kp  EQUAL   &kp  LBKT     &kp RBKT
                         >;
 
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -98,7 +99,7 @@ LSHFT_LPAR   &kp  ESC      &kp  LCTRL              &mo  SYM_L  &kp  LGUI   LCTR_
                         bindings = <
 &none         &to  QWERTY_L &to  DVORAK_L &to  COLEMK_L &none         &none                                                                             &none             &kp PRINTSCREEN    &none         &ext_power EP_OFF  &ext_power EP_ON &none
 &none         &bt  BT_SEL 0 &bt  BT_SEL 1 &bt  BT_SEL 2 &bt  BT_SEL 3 &bt  BT_SEL 4                                                                     &none             &none              &none            &none           &none            &none
-&bootloader   &sys_reset        &studio_unlock 	&out OUT_USB  &out OUT_BLE  &none         &bt BT_CLR                                         &none            &none             &none              &none            &none           &none            &trans
+&bootloader   &sys_reset        &studio_unlock 	&out OUT_USB  &out OUT_BLE  &none         &bt BT_CLR                                            &none            &none             &none              &none            &none           &none    &trans
 &none         &none         &trans                      &trans        &trans        &trans        &trans                 &trans        &trans           &trans            &trans                              &kp  RCTRL      &none            &none
                         >;
 			

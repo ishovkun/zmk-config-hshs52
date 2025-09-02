@@ -120,6 +120,7 @@ LSHFT_LPAR   &kp  ESC      &kp  BACKSLASH          &mo  SYM_L  &kp  LGUI   LCTR_
                         >;
 			
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+                        display-name = "Adj layer";
                 };
 
                 dvorak_layer {
@@ -138,6 +139,7 @@ LSHFT_LPAR   &kp  ESC      &kp  BACKSLASH          &mo  SYM_L  &kp  LGUI   LCTR_
                         >;
 
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+                        display-name = "Dvorak layer";
                 };
 
                 colemak_layer {
@@ -156,6 +158,7 @@ LSHFT_LPAR   &kp  ESC      &kp  BACKSLASH          &mo  SYM_L  &kp  LGUI   LCTR_
                         >;
 
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+                        display-name = "Colemak layer";
                 };
 
         };
